@@ -1,0 +1,135 @@
+﻿.canvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+    .canvas:focus {
+        outline: none;
+    }
+
+.canvas-zoom {
+    touch-action: none;
+}
+
+g {
+    transform: translate(0, 0);
+}
+
+.g-card {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* text SHIT */
+
+text {
+    user-select: none;
+    font-size: 20px;
+    fill: darkgray;
+    white-space: pre;
+    background-color: red;
+}
+
+    text:focus {
+        outline: none;
+    }
+
+
+.card-highlighter {
+    fill: transparent;
+    pointer-events: none;
+    stroke: red;
+    stroke-dasharray: 4;
+}
+
+.card-selector {
+    fill: transparent;
+    pointer-events: none;
+    user-select: none;
+    stroke: rgba(190, 190, 190, 0.7);
+    fill: rgba(230, 230, 230, 0.3);
+    stroke-width: 0.5px;
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.visible {
+    transition: opacity 0ms;
+    opacity: 1.0 !important;
+}
+
+
+
+
+
+
+/* NEW BLAZE */
+.blaze-text:hover, .blaze-rect:hover {
+    cursor: move;
+    /*    cursor: pointer;*/
+}
+
+/* DROP AREA */
+.blaze-droparea {
+    fill: rgba(255, 105, 0, 0.3);
+    stroke: rgba(255, 105, 0, 0.7);
+}
+
+/* BUTTON */
+.blaze-button {
+    fill: rgba(60, 60, 230, 0.9);
+}
+
+    .blaze-button:hover {
+        cursor: pointer;
+    }
+
+.blaze-button-down {
+    fill: rgba(60, 230, 60, 0.9);
+}
+
+/* TEXT */
+.blaze-text-editing:hover {
+    cursor: default;
+    /*    cursor: text;*/
+}
+
+.blaze-text-caret {
+    opacity: 1;
+    transition-duration: 160ms;
+    user-select: none;
+    pointer-events: none;
+}
+
+.blaze-text-selector {
+    fill: rgba(160, 160, 250, 0.5);
+}
+
+.blaze-text-editing {
+    /*    user-select: text;*/
+}
+
+    .blaze-text-editing::selection {
+        /*        background-color: #efb1ff;*/
+    }
+
+
+
+
+/* HIDDEN WORKAROUND */
+.blaze-calculate-hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+.blaze-input-hidden {
+    opacity: 0.0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
