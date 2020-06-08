@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "Editorlol.dll": "sha256-MGB8Driv\/3fsYescwkImTrQ20H53RIf+C51negEsO8c=",
+      "Editorlol.dll": "sha256-kehYemhB5UNcWjDa+daDSZUkrCpLMsnmkRqfZ07XN8c=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-J1c7gBb8PIs6XdswPUasIM4F8DvU\/21tsVnt3Gz0xTA=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
       "System.Xml.Linq.dll": "sha256-X+KtxwDBjBx9VPq3zF9ip+63zx1z2Rz5Lg1GBCpkUq0=",
@@ -30,22 +30,22 @@
       "System.Drawing.Common.dll": "sha256-4R9RWEah9N7EeoCL7dwZ8UpJYiOQpI4JIY\/L99xFk4E=",
       "System.Data.DataSetExtensions.dll": "sha256-GrMZBDV8329h\/O\/w0ZcCD7XL3FUm7iNmu5yYHz5oNhs=",
       "System.Data.dll": "sha256-L5mEzgluvD+tz4p5rkTK0uSW2lsh2fVOJJnB5kOPJ10=",
-      "BlazeCardsCore.dll": "sha256-C5W\/4oybvM0k5bnau46TjP27PAlF1qNAx9kP4BM2vIk=",
+      "Microsoft.JSInterop.dll": "sha256-+kkB0IoIRe3btzvzpsbxZCE8d9ZnAHZccE\/UefkIONE=",
+      "System.Text.Encodings.Web.dll": "sha256-pdROiFsGtlj0QQUXju+fl1hZJThR0+ePj5bkwCj3ku0=",
+      "System.Text.Json.dll": "sha256-i2eadh0HJqf6CZQENPre6rCsoKUs1Lz3KOSTi\/csV9Q=",
+      "System.Runtime.CompilerServices.Unsafe.dll": "sha256-vK9IBBJl1fs+hinlQUxpPvkGV7en5XJ2SryYwtkHoK0=",
+      "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
+      "Microsoft.Bcl.AsyncInterfaces.dll": "sha256-NktPvm6CrEWy+t6kSiltKtuBb\/yT9TVcx4h01\/zoF+Q=",
+      "System.Threading.Tasks.Extensions.dll": "sha256-TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=",
+      "System.Numerics.Vectors.dll": "sha256-6isumOmKraghJxnUrGbNhFd6Qxj09gTHFQ\/0CAhEnZs=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-v4LhihP26fP\/dVajppSCZIrCVbkiALCJgAisyG2cmJQ=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-e0FY4g2Vt8TsXfafkXU2XnUgcYzjzPiFqb3KCylDb74=",
       "System.ComponentModel.Annotations.dll": "sha256-tmnkCmP9OzLUkpQ3LP7PRosi7gt5pyfEZCM6aqAokFI=",
       "System.ComponentModel.DataAnnotations.dll": "sha256-3nH8Hgu\/ahDHfhB+akpjyf58+vclsE3z7TdznTofz\/c=",
       "Microsoft.AspNetCore.Components.dll": "sha256-YdDsq93tG2TnOT8G+GKvwBU6TqwefNVQq9nC8\/Cjphc=",
-      "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-CqPz1uICZGs1JMQSI0PlufBVGeateCy\/KJ3J70ViYq4=",
-      "System.Text.Json.dll": "sha256-i2eadh0HJqf6CZQENPre6rCsoKUs1Lz3KOSTi\/csV9Q=",
-      "System.Runtime.CompilerServices.Unsafe.dll": "sha256-vK9IBBJl1fs+hinlQUxpPvkGV7en5XJ2SryYwtkHoK0=",
-      "Microsoft.Bcl.AsyncInterfaces.dll": "sha256-NktPvm6CrEWy+t6kSiltKtuBb\/yT9TVcx4h01\/zoF+Q=",
-      "System.Threading.Tasks.Extensions.dll": "sha256-TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=",
-      "System.Numerics.Vectors.dll": "sha256-6isumOmKraghJxnUrGbNhFd6Qxj09gTHFQ\/0CAhEnZs=",
-      "System.Text.Encodings.Web.dll": "sha256-pdROiFsGtlj0QQUXju+fl1hZJThR0+ePj5bkwCj3ku0=",
+      "BlazeCardsCore.dll": "sha256-4SsU\/sdB6z1ag8khPK0tigwfFClTBjgR61S+d1xXs6s=",
       "Mono.WebAssembly.Interop.dll": "sha256-AXEcPOZjeTXMSAQUvODCA7F60VTlh2SRGzfC6vWsjY4=",
-      "Microsoft.JSInterop.dll": "sha256-+kkB0IoIRe3btzvzpsbxZCE8d9ZnAHZccE\/UefkIONE=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-sifIvl02zqfSiv67ZRAsSa+NCvhMgTGrIUNuK8LmCNM=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-8Y81cOKaNJHZZvHu0TROikruBOenBHdE5WwI2BOkNNE=",
       "Microsoft.Extensions.Primitives.dll": "sha256-R72GsN2CwnK2aKmojsUT7yUgUmCTDze6SnXTKcCovc4=",
@@ -61,8 +61,8 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "Editorlol.pdb": "sha256-sAkiPbvN7mLc8Ywhr9Ls9XrpIEH2bYn5fJqr1RAQZak=",
-      "BlazeCardsCore.pdb": "sha256-cn+gss7JffmFBQiHAvQjdRWsGhFIas91AzRAJHTZR\/0="
+      "Editorlol.pdb": "sha256-PW4X6DWZWqj4u51TlqX1d9TyrrbO9\/\/9Mty3QhTFYE0=",
+      "BlazeCardsCore.pdb": "sha256-daG5v4CjXNNUf2eicViXYvf3vGmsAyPKO0WCabaw530="
     },
     "runtime": {
       "dotnet.3.2.0-preview5.20210.1.js": "sha256-\/uExEU5ECP+u0FDAudLlva53SiNUut4PPcG9xnAVikc=",

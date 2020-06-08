@@ -126,9 +126,10 @@ app {
     color: red;
 }
 
-.school-drop-area {
+.school-orange {
+    fill: #e9671e !important;
 }
 
-.school-orange {
-    fill: #e9671e;
+.school-background {
+    fill: #f2a77d !important;
 }
