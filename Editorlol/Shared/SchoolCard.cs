@@ -1,5 +1,7 @@
-﻿using BlazeCardsCore.Descriptors;
+﻿using BlazeCardsCore.Components;
+using BlazeCardsCore.Descriptors;
 using BlazeCardsCore.Factories;
+using BlazeCardsCore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,46 +10,60 @@ using System.Threading.Tasks;
 
 namespace Editorlol.Shared
 {
-    public class SchoolCard : VerticalListCard
+    public class SchoolCard : Card
     {
         public TextCard Time { get; private set; }
         public TextCard Teacher { get; private set; }
         public TextCard Classroom { get; private set; }
+        public TextCard ClassName { get; private set; }
         public RectCard Background { get; private set; }
 
-        public SchoolCard(string classroom, string teacher, string time) : base()
+        public SchoolCard(string className, string classroom, string teacher, string time)
         {
             Background = new RectCard();
-            Background.Draggable = false;
-            Background.Clickable = false;
             Background.Classes.Add("school-orange");
-            this.Classes.Add("school-background");
-            Background.SizeBehavior.Size = new BlazeCardsCore.Models.Vector2f(200, 100);
-            //AddChild(Background);
-            this.Fixed = true;
+            this.Classes.Add("school-text");
+            Background.SizeBehavior.Size = new Vector2f(200, 100);
+            Background.PositionBehavior.Position = new Vector2f(0, 0);
+            AddChild(Background);
+
+            ClassName = new TextCard();
+            ClassName.PositionBehavior.Position = new Vector2f(150, 0);
+            ClassName.TextBehavior.Value = className;
+            AddChild(ClassName);
 
             this.Teacher = new TextCard();
             Teacher.TextBehavior.Value = teacher;
-            Teacher.Classes.Add("school-text");
-            Teacher.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(0, 0);
-            //this.Teacher.Draggable = false;
-            //this.Teacher.Clickable = false;
+            Teacher.PositionBehavior.Position = new Vector2f(0, 50);
             this.AddChild(Teacher);
 
             Time = new TextCard();
             Time.TextBehavior.Value = time;
-            //this.Time.Draggable = false;
-            //this.Time.Clickable = false;
+            Time.PositionBehavior.Position = new Vector2f(80, 30);
             AddChild(Time);
 
             Classroom = new TextCard();
             Classroom.TextBehavior.Value = classroom;
+            Classroom.PositionBehavior.Position = new Vector2f(150, 50);
             AddChild(Classroom);
 
             Teacher.OnSelected += OnSelected;
             Time.OnSelected += OnSelected;
             Classroom.OnSelected += OnSelected;
+            Background.OnSelected += OnSelected;
         }
+
+        public override Vector2f GetSize() => Background.GetSize();
+
+        public override void Snap() => base.Snap();
+
+        public override void Update()
+        {
+            base.Update();
+            Snap();
+        }
+
+        public override Type GetComponentType() => typeof(ListComponent);
 
         private void OnSelected(Card sender, BlazeCardsCore.Models.Vector2f pos)
         {

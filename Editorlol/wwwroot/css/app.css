@@ -134,6 +134,10 @@ app {
     fill: #f2a77d !important;
 }
 
-.blaze-text {
+.school-text .blaze-text {
     fill: black !important;
 }
+
+/*.blaze-text {
+    fill: black !important;
+}*/
