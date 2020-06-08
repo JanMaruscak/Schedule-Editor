@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="BlazeCardsCore">
-      <HintPath>D:\Random Downloads\blaze-cards-master\BlazeCardsCore\bin\Debug\netstandard2.1\BlazeCardsCore.dll</HintPath>
+      <HintPath>..\..\..\source\repos\BlazeCards\BlazeCardsCore\bin\Debug\netstandard2.1\BlazeCardsCore.dll</HintPath>
     </Reference>
   </ItemGroup>
 
