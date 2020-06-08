@@ -22,7 +22,7 @@ namespace Editorlol.Shared
         {
             Background = new RectCard();
             Background.Classes.Add("school-orange");
-            this.Classes.Add("school-text");
+            Classes.Add("school-text");
             Background.SizeBehavior.Size = new Vector2f(200, 100);
             Background.PositionBehavior.Position = new Vector2f(0, 0);
             AddChild(Background);
@@ -32,10 +32,10 @@ namespace Editorlol.Shared
             ClassName.TextBehavior.Value = className;
             AddChild(ClassName);
 
-            this.Teacher = new TextCard();
+            Teacher = new TextCard();
             Teacher.TextBehavior.Value = teacher;
-            Teacher.PositionBehavior.Position = new Vector2f(0, 50);
-            this.AddChild(Teacher);
+            Teacher.PositionBehavior.Position = new Vector2f(0, 60);
+            AddChild(Teacher);
 
             Time = new TextCard();
             Time.TextBehavior.Value = time;
@@ -44,7 +44,7 @@ namespace Editorlol.Shared
 
             Classroom = new TextCard();
             Classroom.TextBehavior.Value = classroom;
-            Classroom.PositionBehavior.Position = new Vector2f(150, 50);
+            Classroom.PositionBehavior.Position = new Vector2f(150, 60);
             AddChild(Classroom);
 
             Teacher.OnSelected += OnSelected;
@@ -65,7 +65,7 @@ namespace Editorlol.Shared
 
         public override Type GetComponentType() => typeof(ListComponent);
 
-        private void OnSelected(Card sender, BlazeCardsCore.Models.Vector2f pos)
+        private void OnSelected(Card sender, Vector2f pos)
         {
             Console.WriteLine("-> MOUSE DOWN!!!");
 

@@ -24,11 +24,10 @@ namespace Editorlol.Shared
             this.Spacing = spacing;
             Text.OnSelected += OnSelected;
             Background.OnSelected += OnSelected;
-            Text.OnUp += Text_OnDown;
             AddChild(Background);
             AddChild(Text);
             Text.TextBehavior.Value = "50";
-            Background.SizeBehavior.Size = new Vector2f(Background.SizeBehavior.Size.X, 50);
+            Background.SizeBehavior.Size = new Vector2f(200, 50);
         }
 
         private void Text_OnDown(Card sender, Vector2f pos)
@@ -64,7 +63,7 @@ namespace Editorlol.Shared
             //if (!this.Fixed) this.Children = this.Children.OrderBy(card => card.GetPosition().Y).ToList();
             if (int.TryParse(Text.TextBehavior.Value, out int result))
             {
-                Background.SizeBehavior.Size = new Vector2f(Text.GetSize().X, result);
+                Background.SizeBehavior.Size = new Vector2f(200, Math.Max(result,50));
                 Background.PositionBehavior.Position = new Vector2f(0, 0);
                 var x = (Background.SizeBehavior.Size.Y - Text.GetSize().Y) / 2;
                 Text.PositionBehavior.Position = new Vector2f(0, x);

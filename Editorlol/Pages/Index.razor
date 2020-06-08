@@ -6,16 +6,17 @@
 <button @onclick="GoLeft">Left</button>
 <button @onclick="GoRight">right</button>
 <button @onclick="AddCard">Add card</button>
+<button @onclick="AddBreak">Add card</button>
 @(Week+1)/
 @(Weeks.Count)
 
 <div style="display: flex;">
     @foreach (var item in Days)
     {
-    <div style="display: flex; flex-direction: column">
-        <p style="width: 200px; text-align:center">@item.DayOfWeek</p>
-        <p style="width: 200px; text-align:center">@item.Day.ToString(). @item.Month.ToString().</p>
-    </div>
+        <div style="display: flex; flex-direction: column">
+            <p style="width: 200px; text-align:center">@item.DayOfWeek</p>
+            <p style="width: 200px; text-align:center">@item.Day.ToString(). @item.Month.ToString().</p>
+        </div>
     }
 </div>
 
@@ -29,112 +30,116 @@
     Days = new List<DateTime>
         ();
 
-        private void AddCard()
-        {
-        this.cardState.Storage.Cards.Add(new SchoolCard("VYT","pepis", "penc", "lol"));
-        }
-        private void GoRight()
-        {
+    private void AddCard()
+    {
+        Weeks[Week][0].AddChild(new SchoolCard("VYT", "pepis", "penc", "lol"));
+    }
+    private void AddBreak()
+    {
+        Weeks[Week][0].AddChild(new BreakCard());
+    }
+    private void GoRight()
+    {
         if (Week + 1 == Weeks.Count)
         {
-        var newWeek = new List<VerticalListCard>
-            ();
+            var newWeek = new List<VerticalListCard>
+                ();
             for (int i = 0; i < 5; i++)
             {
-            newWeek.Add(GetTemplateList(i, Width, MarginTop));
+                newWeek.Add(GetTemplateList(i, Width, MarginTop));
             }
             Weeks.Add(newWeek);
 
             foreach (var item in Weeks[Week])
             {
-            this.cardState.Storage.Cards.Remove(item);
+                this.cardState.Storage.Cards.Remove(item);
             }
 
             foreach (var item in newWeek)
             {
-            this.cardState.Storage.Cards.Add(item);
+                this.cardState.Storage.Cards.Add(item);
             }
             GoneRight++;
-            }
-            else
-            {
+        }
+        else
+        {
             foreach (var item in Weeks[Week])
             {
-            this.cardState.Storage.Cards.Remove(item);
+                this.cardState.Storage.Cards.Remove(item);
             }
 
             foreach (var item in Weeks[Week + 1])
             {
-            this.cardState.Storage.Cards.Add(item);
+                this.cardState.Storage.Cards.Add(item);
             }
-            }
-            for (int i = 0; i < Days.Count; i++)
-            {
+        }
+        for (int i = 0; i < Days.Count; i++)
+        {
             Days[i] = Days[i].AddDays(7);
-            }
-            Week++;
-            this.cardState.Canvas.InvokeChange();
-            }
-            private void GoLeft()
-            {
-            if (Week == 0)
-            {
+        }
+        Week++;
+        this.cardState.Canvas.InvokeChange();
+    }
+    private void GoLeft()
+    {
+        if (Week == 0)
+        {
             var newWeek = new List<VerticalListCard>
                 ();
-                for (int i = 0; i < 5; i++)
-                {
+            for (int i = 0; i < 5; i++)
+            {
                 newWeek.Add(GetTemplateList(i, Width, MarginTop));
-                }
+            }
 
-                foreach (var item in Weeks[Week])
-                {
+            foreach (var item in Weeks[Week])
+            {
                 this.cardState.Storage.Cards.Remove(item);
-                }
+            }
 
-                foreach (var item in newWeek)
-                {
+            foreach (var item in newWeek)
+            {
                 this.cardState.Storage.Cards.Add(item);
-                }
-                Weeks.Insert(0, newWeek);
-                GoneLeft--;
-                }
-                else
-                {
-                foreach (var item in Weeks[Week])
-                {
+            }
+            Weeks.Insert(0, newWeek);
+            GoneLeft--;
+        }
+        else
+        {
+            foreach (var item in Weeks[Week])
+            {
                 this.cardState.Storage.Cards.Remove(item);
-                }
+            }
 
-                foreach (var item in Weeks[Week - 1])
-                {
+            foreach (var item in Weeks[Week - 1])
+            {
                 this.cardState.Storage.Cards.Add(item);
-                }
-                Week--;
-                }
-                for (int i = 0; i < Days.Count; i++)
-                {
-                Days[i] = Days[i].AddDays(-7);
-                }
-                this.cardState.Canvas.InvokeChange();
-                }
+            }
+            Week--;
+        }
+        for (int i = 0; i < Days.Count; i++)
+        {
+            Days[i] = Days[i].AddDays(-7);
+        }
+        this.cardState.Canvas.InvokeChange();
+    }
 
-                int Week = 0;
-                int GoneLeft = 0;
-                int GoneRight = 0;
+    int Week = 0;
+    int GoneLeft = 0;
+    int GoneRight = 0;
 
-                int MarginTop = 0;
-                int Height = 1000;
-                int Width = 200;
+    int MarginTop = 0;
+    int Height = 1000;
+    int Width = 200;
 
-                List<List<VerticalListCard>> Weeks = new List<List<VerticalListCard>>();
+    List<List<VerticalListCard>> Weeks = new List<List<VerticalListCard>>();
 
     protected override void OnInitialized()
     {
         this.cardState = new CardState();
         Weeks.Add(new List<VerticalListCard>());
-        for (int i = 0; i < 5; i++)
+        for (int x = 0; x < 5; x++)
         {
-            Days.Add(DateTime.Now.AddDays(i));
+            Days.Add(DateTime.Now.AddDays(x));
         }
 
         for (int i = 0; i < 5; i++)
@@ -146,8 +151,9 @@
             area.SizeBehavior.Size = new BlazeCardsCore.Models.Vector2f(Width, Height);
             area.Clickable = false;
             area.Draggable = false;
-            area.Visible = false;
             area.Classes.Add("school-background");
+            area.Classes.Add(i.ToString());
+
             var list = new VerticalListCard();
             list.Clickable = false;
             list.Draggable = false;
@@ -156,22 +162,14 @@
             {
                 foreach (var item in e.Cards)
                 {
-                    if (item.Parent == null)
-                    {
-                        this.cardState.Storage.Cards.Remove(item);
-                        list.AddChild(item);
-
-                        item.Component.InvokeChange();
-                        list.Component.InvokeChange();
-                        list.InvokeComponentChange();
-                        item.InvokeComponentChange();
-                        this.cardState.Storage.State.InteropQueue.Flush(this.cardState.Canvas.JSRuntime);
-                        this.cardState.Canvas.InvokeChange();
-                    }
-                    else if (list != item.Parent)
+                    Console.WriteLine("HEWOO");
+                    Console.WriteLine(i.ToString());
+                    Console.WriteLine("HEWOO2");
+                    var index = int.Parse(area.Classes.Last());
+                    if (Weeks[Week][index] != item.Parent)
                     {
                         item.UnhookFromParent();
-                        list.AddChild(item);
+                        Weeks[Week][index].AddChild(item);
                     }
 
                 //if (item is TextCard)
@@ -190,17 +188,6 @@
             this.cardState.Storage.Cards.Add(area);
             this.cardState.Storage.Cards.Add(list);
         }
-        var brek = new BreakCard();
-        brek.Text.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(20, 0);
-        //brek.Children[0].OnMove += (o, e) =>
-        //{
-        //    foreach (var item in o.Parent.Children)
-        //    {
-        //        if (item == o) continue;
-        //        item.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(item.PositionBehavior.Position.X + e.X, item.Parent.PositionBehavior.Position.Y + item.PositionBehavior.Position.Y);
-        //    }
-        //};
-        this.cardState.Storage.Cards.Add(brek);
     }
     private VerticalListCard GetTemplateList(int index, int width, int marginTop)
     {
