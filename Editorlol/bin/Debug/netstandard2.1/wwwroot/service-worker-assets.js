@@ -9,7 +9,7 @@
       "url": "blaze-cards\/cards.js"
     },
     {
-      "hash": "sha256-X9niyKb4wNjQpZHLZlmY5B\/WEfTilWUm1mRvfWKL7EY=",
+      "hash": "sha256-qZTpPuHt+tpig9qOonA5u2Qu05q577WdF\/G7jp7d\/Xw=",
       "url": "css\/app.css"
     },
     {
@@ -73,7 +73,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-qUodIqDl+mg2iqAOLsFd5+citIvrAi1JXC9bv4Dnef4=",
+      "hash": "sha256-MGB8Driv\/3fsYescwkImTrQ20H53RIf+C51negEsO8c=",
       "url": "_framework\/_bin\/Editorlol.dll"
     },
     {
@@ -285,7 +285,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-lg1jMWt5OmX2CX1ZGWiEmqBvsvXahicJqkkxyTZERjI=",
+      "hash": "sha256-sAkiPbvN7mLc8Ywhr9Ls9XrpIEH2bYn5fJqr1RAQZak=",
       "url": "_framework\/_bin\/Editorlol.pdb"
     },
     {
@@ -305,7 +305,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-R6YMI\/Yj7ecPYOOL+\/v5PwOAlUThA+B+KR5U53695BY=",
+      "hash": "sha256-o1Yvn9es6sOB5dGqUM4on7k9ozAdL+De4Pxj\/aL\/d3A=",
       "url": "_framework\/blazor.boot.json"
     }
   ],

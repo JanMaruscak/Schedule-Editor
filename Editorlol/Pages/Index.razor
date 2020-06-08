@@ -13,6 +13,36 @@
     protected override void OnInitialized()
     {
         this.cardState = new CardState();
+        int marginTop = 50;
+        int height = 1000;
+        int width = 200;
+        int textMarginBottom = 25;
+        int randomNum = 0;
+
+        var monday = new TextCard();
+        monday.TextBehavior.Value = "Monday";
+        monday.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(0 + (width - (monday.TextBehavior.Value.Length * 20)) / 2, marginTop - textMarginBottom);
+        this.cardState.Storage.Cards.Add(monday);
+
+        var tuesday = new TextCard();
+        tuesday.TextBehavior.Value = "Tuesday";
+        tuesday.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(width + randomNum, marginTop - textMarginBottom);
+        this.cardState.Storage.Cards.Add(tuesday);
+
+        var wednesday = new TextCard();
+        wednesday.TextBehavior.Value = "Wednesday";
+        wednesday.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(width * 2 + randomNum, marginTop - textMarginBottom);
+        this.cardState.Storage.Cards.Add(wednesday);
+
+        var thursday = new TextCard();
+        thursday.TextBehavior.Value = "Fhursday";
+        thursday.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(width * 3 + randomNum, marginTop - textMarginBottom);
+        this.cardState.Storage.Cards.Add(thursday);
+
+        var friday = new TextCard();
+        friday.TextBehavior.Value = "Friday";
+        friday.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(width * 4 + randomNum, marginTop - textMarginBottom);
+        this.cardState.Storage.Cards.Add(friday);
 
         for (int i = 0; i < 5; i++)
         {
@@ -20,8 +50,8 @@
             schoolCard.Time.TextBehavior.Value = "VYT";
 
             var area = new DropAreaCard();
-            area.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(i * 200, 0);
-            area.SizeBehavior.Size = new BlazeCardsCore.Models.Vector2f(200, 1000);
+            area.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(i * width, marginTop);
+            area.SizeBehavior.Size = new BlazeCardsCore.Models.Vector2f(width, height);
             area.Clickable = false;
             area.Draggable = false;
             area.Visible = false;
@@ -47,18 +77,12 @@
                 }
             };
 
-            list.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(i * 200, 0);
+            list.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(i * width, marginTop);
 
-            //list.AddChild(area);
             list.AddChild(schoolCard);
 
             this.cardState.Storage.Cards.Add(area);
             this.cardState.Storage.Cards.Add(list);
-            //for (int x = 0; x < 19; x++)
-            //{
-            //    var nothing = new RectCard();
-            //    list.AddChild(nothing);
-            //}
         }
     }
     //protected override void OnInitialized()

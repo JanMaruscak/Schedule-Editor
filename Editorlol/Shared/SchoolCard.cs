@@ -10,10 +10,15 @@ namespace Editorlol.Shared
     {
         public TextCard Time { get; private set; }
         public TextCard Teacher { get; private set; }
+        public RectCard Background { get; private set; }
 
         public SchoolCard() : base()
         {
-            this.Fixed = false;
+            Background = new RectCard();
+            Background.Draggable = false;
+            Background.Clickable = false;
+            Background.Classes.Add("kyberna-orange");
+            AddChild(Background);
 
             this.Teacher = new TextBlockCard();
             this.Teacher.Draggable = false;
