@@ -133,3 +133,7 @@ app {
 .school-background {
     fill: #f2a77d !important;
 }
+
+.blaze-text {
+    fill: black !important;
+}

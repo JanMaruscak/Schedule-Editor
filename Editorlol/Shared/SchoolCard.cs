@@ -28,12 +28,11 @@ namespace Editorlol.Shared
 
             this.Teacher = new TextCard();
             Teacher.TextBehavior.Value = teacher;
+            Teacher.Classes.Add("school-text");
             Teacher.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(0, 0);
             //this.Teacher.Draggable = false;
             //this.Teacher.Clickable = false;
             this.AddChild(Teacher);
-
-            this.Teacher.OnSelected += OnSelected;
 
             Time = new TextCard();
             Time.TextBehavior.Value = time;
