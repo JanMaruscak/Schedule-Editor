@@ -73,7 +73,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-uwk71dFdpy1N5bJ3tfMGJpLCoPqIWSIJT5RRmRfjzNY=",
+      "hash": "sha256-p+iRYyavlUhDH8uox9foN4j9hAA\/EjLKg22RHZBqkXc=",
       "url": "_framework\/_bin\/Editorlol.dll"
     },
     {
@@ -285,7 +285,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-ickafA6Yc6pDwimAmH5OYp\/bRIsfApkILGlDxU1tDLo=",
+      "hash": "sha256-\/DNmwLbpkLlSECW\/0Qh+0Zz6T2J9zGbYZtUb6qHyAns=",
       "url": "_framework\/_bin\/Editorlol.pdb"
     },
     {
@@ -305,7 +305,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-B1w72n+xzFTRpNgtByvi6AJnQYctKcgpDX9H47gLaeQ=",
+      "hash": "sha256-nRxv5PkZxys71Hfj4Pj0UM5sGjdBUI2jX8LExbZiT+A=",
       "url": "_framework\/blazor.boot.json"
     }
   ],

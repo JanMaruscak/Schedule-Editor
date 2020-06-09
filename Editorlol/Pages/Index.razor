@@ -3,11 +3,12 @@
 @using BlazeCardsCore.State
 @using BlazeCardsCore.Descriptors
 
-<button @onclick="GoLeft" style="outline:none; border: none; padding:5px">Left</button>
-<button @onclick="GoRight" style="outline:none; border: none; padding:5px">right</button>
+<button @onclick="GoLeft" style="outline:none; border: none; padding:5px">Go Left</button>
+<button @onclick="GoRight" style="outline:none; border: none; padding:5px">Go Right</button>
 <button @onclick="AddCard" style="outline:none; border: none; padding:5px">Add Card</button>
 <button @onclick="AddBreak" style="outline:none; border: none; padding:5px">Add Break</button>
 <button @onclick="DeleteCard" style="outline:none; border: none; padding:5px">Delete card</button>
+<button @onclick="UpdateTimes" style="outline:none; border: none; padding:5px">Update times</button>
 <select @onchange="SelectClass">
     <option value="T2">T2</option>
     <option value="T1">T1</option>
@@ -92,6 +93,31 @@
     private void AddBreak()
     {
         Weeks[Week][0].AddChild(new BreakCard());
+    }
+    private void UpdateTimes()
+    {
+        foreach (var day in Weeks[Week])
+        {
+            DateTime s = GetMondayDay();
+            TimeSpan ts = new TimeSpan(7, 0, 0);
+            s = s.Date + ts;
+            foreach (var item in day.Children)
+            {
+                if (item is SchoolCard)
+                {
+                    var sch = item as SchoolCard;
+                    sch.Time.TextBehavior.Value = $"{s.ToString("HH:mm")} - {s.AddMinutes(45).ToString("HH:mm")}";
+                    s = s.AddMinutes(45);
+                    sch.InvokeComponentChange();
+                }
+                else if (item is BreakCard)
+                {
+                    var br = item as BreakCard;
+                    s = s.AddMinutes(int.Parse(br.Text.TextBehavior.Value));
+                }
+                item.InvokeComponentChange();
+            }
+        }
     }
     private void GoRight()
     {
@@ -248,6 +274,7 @@
                         var br = item as BreakCard;
                         s = s.AddMinutes(int.Parse(br.Text.TextBehavior.Value));
                     }
+                    item.InvokeComponentChange();
                 }
                 s = GetMondayDay();
                 ts = new TimeSpan(7, 0, 0);
@@ -265,6 +292,7 @@
                         var br = item as BreakCard;
                         s = s.AddMinutes(int.Parse(br.Text.TextBehavior.Value));
                     }
+                    item.InvokeComponentChange();
                 }
 
                 foreach (var item in e.Cards)

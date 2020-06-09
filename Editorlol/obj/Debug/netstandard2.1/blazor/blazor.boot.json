@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "Editorlol.dll": "sha256-uwk71dFdpy1N5bJ3tfMGJpLCoPqIWSIJT5RRmRfjzNY=",
+      "Editorlol.dll": "sha256-p+iRYyavlUhDH8uox9foN4j9hAA\/EjLKg22RHZBqkXc=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-J1c7gBb8PIs6XdswPUasIM4F8DvU\/21tsVnt3Gz0xTA=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
       "System.Xml.Linq.dll": "sha256-X+KtxwDBjBx9VPq3zF9ip+63zx1z2Rz5Lg1GBCpkUq0=",
@@ -61,7 +61,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "Editorlol.pdb": "sha256-ickafA6Yc6pDwimAmH5OYp\/bRIsfApkILGlDxU1tDLo=",
+      "Editorlol.pdb": "sha256-\/DNmwLbpkLlSECW\/0Qh+0Zz6T2J9zGbYZtUb6qHyAns=",
       "BlazeCardsCore.pdb": "sha256-2DvKhZyJfm1nhmP9YCW+nz6gXv6Tlfhx4v+ohv9\/r1M="
     },
     "runtime": {

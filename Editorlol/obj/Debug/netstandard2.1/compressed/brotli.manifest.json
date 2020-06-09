@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\uwk71dFdpy1N5bJ3tfMGJpLCoPqIWSIJT5RRmRfjzNY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\p_iRYyavlUhDH8uox9foN4j9hAA-EjLKg22RHZBqkXc=.hash",
       "Source": "C:\\Users\\janma\\source\\repos\\Editorlol\\Editorlol\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Editorlol.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Editorlol.dll.br"
     },
@@ -266,7 +266,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ickafA6Yc6pDwimAmH5OYp-bRIsfApkILGlDxU1tDLo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-DNmwLbpkLlSECW-0Qh_0Zz6T2J9zGbYZtUb6qHyAns=.hash",
       "Source": "C:\\Users\\janma\\source\\repos\\Editorlol\\Editorlol\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Editorlol.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Editorlol.pdb.br"
     },
@@ -291,12 +291,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\B1w72n_xzFTRpNgtByvi6AJnQYctKcgpDX9H47gLaeQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nRxv5PkZxys71Hfj4Pj0UM5sGjdBUI2jX8LExbZiT_A=.hash",
       "Source": "C:\\Users\\janma\\source\\repos\\Editorlol\\Editorlol\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\_e2LvbiF2N1OtD8JNeLl5TiNyQagvV2z05FCOnhIKgc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\bwrbh342X-jQXJcrpWla4Dyftxh6eWEP-DTuT4h6WW0=.hash",
       "Source": "C:\\Users\\janma\\source\\repos\\Editorlol\\Editorlol\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.br"
     }
