@@ -31,8 +31,9 @@
 
 @code {
     private CardState cardState;
-    List<DateTime> Days = new List<DateTime>
-    ();
+    List<DateTime>
+    Days = new List<DateTime>
+        ();
 
     int Week = 0;
     int GoneLeft = 0;
@@ -50,12 +51,9 @@
 
     private void DeleteCard()
     {
-        //if (this.cardState.Selected is SchoolCard)
+        foreach (var item in this.cardState.Selected)
         {
-            foreach (var item in this.cardState.Selected)
-            {
-                item.UnhookFromParent();
-            }
+            item.UnhookFromParent();
         }
     }
 
@@ -103,7 +101,7 @@
                 ();
             for (int i = 0; i < 5; i++)
             {
-                newWeek.Add(GetTemplateList(i, Width, MarginTop));
+                newWeek.Add(GetTemplateDay(i, Width, MarginTop));
             }
             Weeks.Add(newWeek);
 
@@ -145,7 +143,7 @@
                 ();
             for (int i = 0; i < 5; i++)
             {
-                newWeek.Add(GetTemplateList(i, Width, MarginTop));
+                newWeek.Add(GetTemplateDay(i, Width, MarginTop));
             }
 
             foreach (var item in Weeks[Week])
@@ -179,13 +177,34 @@
         }
         this.cardState.Canvas.InvokeChange();
     }
+    private DateTime GetMondayDay()
+    {
+        var today = DateTime.Now;
+        if (today.DayOfWeek == DayOfWeek.Saturday)
+        {
+            return today.AddDays(2);
+        }
+        if (today.DayOfWeek == DayOfWeek.Sunday)
+        {
+            return today.AddDays(1);
+        }
+        today = today.AddDays(-5);
+
+        int daysUntilMonday = ((int)DayOfWeek.Monday - (int)today.DayOfWeek + 7) % 7;
+        return today.AddDays(daysUntilMonday);
+
+    }
 
     protected override void OnInitialized()
     {
+        this.cardState = new CardState();
+        this.cardState.Mouse.Zoomable = false;
+        this.cardState.Mouse.Scrollable = false;
         for (int x = 0; x < 5; x++)
         {
-            Days.Add(DateTime.Now.AddDays(x));
+            Days.Add(GetMondayDay().AddDays(x));
         }
+
         Classes.Add("T2", Weeks);
         Classes.Add("T1", new List<List<VerticalListCard>>());
 
@@ -196,9 +215,8 @@
         Classes["T1"].Add(new List<VerticalListCard>());
         for (int i = 0; i < 5; i++)
         {
-            Classes["T1"][0].Add(GetTemplateList(i, Width, MarginTop));
+            Classes["T1"][0].Add(GetTemplateDay(i, Width, MarginTop));
         }
-        this.cardState = new CardState();
         Weeks.Add(new List<VerticalListCard>());
 
         for (int i = 0; i < 5; i++)
@@ -213,6 +231,42 @@
             area.OnDrop += (o, e) =>
             {
                 var index = int.Parse(area.Classes.Last());
+
+                DateTime s = GetMondayDay();
+                TimeSpan ts = new TimeSpan(7, 0, 0);
+                s = s.Date + ts;
+                foreach (var item in o.Children)
+                {
+                    if (item is SchoolCard)
+                    {
+                        var sch = item as SchoolCard;
+                        sch.Time.TextBehavior.Value = $"{s.ToString("HH:mm")} - {s.AddMinutes(45).ToString("HH:mm")}";
+                        s = s.AddMinutes(45);
+                    }
+                    else if (item is BreakCard)
+                    {
+                        var br = item as BreakCard;
+                        s = s.AddMinutes(int.Parse(br.Text.TextBehavior.Value));
+                    }
+                }
+                s = GetMondayDay();
+                ts = new TimeSpan(7, 0, 0);
+                s = s.Date + ts;
+                foreach (var item in e.Cards[0].Parent.Children)
+                {
+                    if (item is SchoolCard)
+                    {
+                        var sch = item as SchoolCard;
+                        sch.Time.TextBehavior.Value = $"{s.ToString("HH:mm")} - {s.AddMinutes(45).ToString("HH:mm")}";
+                        s = s.AddMinutes(45);
+                    }
+                    else if (item is BreakCard)
+                    {
+                        var br = item as BreakCard;
+                        s = s.AddMinutes(int.Parse(br.Text.TextBehavior.Value));
+                    }
+                }
+
                 foreach (var item in e.Cards)
                 {
                     if (Weeks[Week][index] != item.Parent)
@@ -221,23 +275,7 @@
                         Weeks[Week][index].AddChild(item);
                     }
                 }
-
-                foreach (var item in Weeks[Week][index].Children)
-                {
-                    if (item is SchoolCard)
-                    {
-                        var sch = item as SchoolCard;
-                        sch.Time.TextBehavior.Value = item.PositionBehavior.Position.Y.ToString();
-                    }
-                }
-                foreach (var item in e.Cards[0].Parent.Children)
-                {
-                    if (item is SchoolCard)
-                    {
-                        var sch = item as SchoolCard;
-                        sch.Time.TextBehavior.Value = item.PositionBehavior.Position.Y.ToString();
-                    }
-                }
+                this.cardState.Canvas.InvokeChange();
             };
             this.cardState.Storage.Cards.Add(area);
         }
@@ -245,24 +283,20 @@
         {
             var schoolCard = new SchoolCard("VYT", "302", "PN", "14:30-15:45");
 
-            var list = new VerticalListCard();
-            list.Clickable = false;
-            list.Draggable = false;
-
-            list.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(i * Width, MarginTop);
-
+            var list = GetTemplateDay(i, Width, MarginTop);
             list.AddChild(schoolCard);
-
             Weeks[0].Add(list);
             this.cardState.Storage.Cards.Add(list);
         }
     }
-    private VerticalListCard GetTemplateList(int index, int width, int marginTop)
+    private VerticalListCard GetTemplateDay(int index, int width, int marginTop)
     {
         VerticalListCard newList = new VerticalListCard();
         newList.Clickable = true;
         newList.Draggable = true;
+        newList.Fixed = true;
         newList.PositionBehavior.Position = new BlazeCardsCore.Models.Vector2f(index * width, marginTop);
+
         return newList;
     }
 }

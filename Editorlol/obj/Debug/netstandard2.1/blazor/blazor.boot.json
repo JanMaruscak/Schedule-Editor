@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "Editorlol.dll": "sha256-UKuwmba1YLCuiZ9caVhpl5DrB72s7lo4ToCwp6Ra9eM=",
+      "Editorlol.dll": "sha256-uwk71dFdpy1N5bJ3tfMGJpLCoPqIWSIJT5RRmRfjzNY=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-J1c7gBb8PIs6XdswPUasIM4F8DvU\/21tsVnt3Gz0xTA=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
       "System.Xml.Linq.dll": "sha256-X+KtxwDBjBx9VPq3zF9ip+63zx1z2Rz5Lg1GBCpkUq0=",
@@ -44,7 +44,7 @@
       "System.ComponentModel.DataAnnotations.dll": "sha256-3nH8Hgu\/ahDHfhB+akpjyf58+vclsE3z7TdznTofz\/c=",
       "Microsoft.AspNetCore.Components.dll": "sha256-YdDsq93tG2TnOT8G+GKvwBU6TqwefNVQq9nC8\/Cjphc=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-CqPz1uICZGs1JMQSI0PlufBVGeateCy\/KJ3J70ViYq4=",
-      "BlazeCardsCore.dll": "sha256-4SsU\/sdB6z1ag8khPK0tigwfFClTBjgR61S+d1xXs6s=",
+      "BlazeCardsCore.dll": "sha256-Hk\/4dWOYcqXse0u8VKa6thzBPRTSU5Mi5RXLXsYqCz8=",
       "Mono.WebAssembly.Interop.dll": "sha256-AXEcPOZjeTXMSAQUvODCA7F60VTlh2SRGzfC6vWsjY4=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-sifIvl02zqfSiv67ZRAsSa+NCvhMgTGrIUNuK8LmCNM=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-8Y81cOKaNJHZZvHu0TROikruBOenBHdE5WwI2BOkNNE=",
@@ -61,8 +61,8 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "Editorlol.pdb": "sha256-xmm8ObPM4nd8bw4c\/ULiqzNsxLNTkwL9q0s3ear3uJE=",
-      "BlazeCardsCore.pdb": "sha256-daG5v4CjXNNUf2eicViXYvf3vGmsAyPKO0WCabaw530="
+      "Editorlol.pdb": "sha256-ickafA6Yc6pDwimAmH5OYp\/bRIsfApkILGlDxU1tDLo=",
+      "BlazeCardsCore.pdb": "sha256-2DvKhZyJfm1nhmP9YCW+nz6gXv6Tlfhx4v+ohv9\/r1M="
     },
     "runtime": {
       "dotnet.3.2.0-preview5.20210.1.js": "sha256-\/uExEU5ECP+u0FDAudLlva53SiNUut4PPcG9xnAVikc=",

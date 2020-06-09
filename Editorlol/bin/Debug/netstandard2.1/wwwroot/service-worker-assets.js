@@ -73,7 +73,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-UKuwmba1YLCuiZ9caVhpl5DrB72s7lo4ToCwp6Ra9eM=",
+      "hash": "sha256-uwk71dFdpy1N5bJ3tfMGJpLCoPqIWSIJT5RRmRfjzNY=",
       "url": "_framework\/_bin\/Editorlol.dll"
     },
     {
@@ -225,7 +225,7 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "hash": "sha256-4SsU\/sdB6z1ag8khPK0tigwfFClTBjgR61S+d1xXs6s=",
+      "hash": "sha256-Hk\/4dWOYcqXse0u8VKa6thzBPRTSU5Mi5RXLXsYqCz8=",
       "url": "_framework\/_bin\/BlazeCardsCore.dll"
     },
     {
@@ -285,11 +285,11 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-xmm8ObPM4nd8bw4c\/ULiqzNsxLNTkwL9q0s3ear3uJE=",
+      "hash": "sha256-ickafA6Yc6pDwimAmH5OYp\/bRIsfApkILGlDxU1tDLo=",
       "url": "_framework\/_bin\/Editorlol.pdb"
     },
     {
-      "hash": "sha256-daG5v4CjXNNUf2eicViXYvf3vGmsAyPKO0WCabaw530=",
+      "hash": "sha256-2DvKhZyJfm1nhmP9YCW+nz6gXv6Tlfhx4v+ohv9\/r1M=",
       "url": "_framework\/_bin\/BlazeCardsCore.pdb"
     },
     {
@@ -305,7 +305,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-N\/02Cmv4goE5lstF2TIZYSC3Hxl9Ar9kqTAtWS37Lv0=",
+      "hash": "sha256-B1w72n+xzFTRpNgtByvi6AJnQYctKcgpDX9H47gLaeQ=",
       "url": "_framework\/blazor.boot.json"
     }
   ],

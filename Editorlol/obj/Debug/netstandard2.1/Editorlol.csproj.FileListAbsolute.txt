@@ -361,10 +361,10 @@ C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\Razor\_
 C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\AXEcPOZjeTXMSAQUvODCA7F60VTlh2SRGzfC6vWsjY4=.hash
 C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\compressed\_framework\_bin\Mono.WebAssembly.Interop.dll.gz
 C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\compressed\_framework\_bin\Mono.WebAssembly.Interop.dll.br
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\4SsU-sdB6z1ag8khPK0tigwfFClTBjgR61S_d1xXs6s=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\daG5v4CjXNNUf2eicViXYvf3vGmsAyPKO0WCabaw530=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\xZ_8CqqhTxNaLsqN_NQPHB0F33nsFpY3Ne8MHh3cNnY=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\UKuwmba1YLCuiZ9caVhpl5DrB72s7lo4ToCwp6Ra9eM=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\xmm8ObPM4nd8bw4c-ULiqzNsxLNTkwL9q0s3ear3uJE=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\N-02Cmv4goE5lstF2TIZYSC3Hxl9Ar9kqTAtWS37Lv0=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\iC8otQIAJsjxU-bJr78ahq-MSc_yv4THsfcef5LY5UY=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\Hk-4dWOYcqXse0u8VKa6thzBPRTSU5Mi5RXLXsYqCz8=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\2DvKhZyJfm1nhmP9YCW_nz6gXv6Tlfhx4v_ohv9-r1M=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\hi2lZVcejZSV3IGggrWrRA69vgeY_yZrPViIY32mVRg=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\uwk71dFdpy1N5bJ3tfMGJpLCoPqIWSIJT5RRmRfjzNY=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\ickafA6Yc6pDwimAmH5OYp-bRIsfApkILGlDxU1tDLo=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\B1w72n_xzFTRpNgtByvi6AJnQYctKcgpDX9H47gLaeQ=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\_e2LvbiF2N1OtD8JNeLl5TiNyQagvV2z05FCOnhIKgc=.hash

@@ -41,7 +41,7 @@ namespace Editorlol.Shared
 
             Time = new TextCard();
             Time.TextBehavior.Value = time;
-            Time.PositionBehavior.Position = new Vector2f(80, 30);
+            Time.PositionBehavior.Position = new Vector2f(70, 30);
             Time.Classes.Add(".school-text");
             AddChild(Time);
 

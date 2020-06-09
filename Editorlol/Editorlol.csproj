@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="BlazeCardsCore">
-      <HintPath>F:\TV Shows\Mr. Robot\blaze\blaze-cards\BlazeCardsCore\bin\Debug\netstandard2.1\BlazeCardsCore.dll</HintPath>
+      <HintPath>D:\Random Downloads\New folder (2)\blaze-cards\BlazeCardsCore\bin\Debug\netstandard2.1\BlazeCardsCore.dll</HintPath>
     </Reference>
   </ItemGroup>
 
