@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-nTdiNSgEdLnB8VK9qqRjV+2ZIrZyRTH8Tjf41Wt0+88=",
+      "hash": "sha256-rNA9+F1QCkzjGwbOKapKRHkKyW34Isys6OVKnIMogSE=",
       "url": "blaze-cards\/cards.css"
     },
     {
@@ -9,7 +9,7 @@
       "url": "blaze-cards\/cards.js"
     },
     {
-      "hash": "sha256-lfaXHMhUIPCuA2tHPVqcawHWryDKOpz4wooMbAVoh\/g=",
+      "hash": "sha256-SE+DsQoFfbBVsRVmGkl2HD92awgWJ96GLXijVebGe0E=",
       "url": "css\/app.css"
     },
     {
@@ -73,7 +73,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-fOvbVK9B+v2H2tZ6zKGn3E3OXDvwvw2\/nw\/1d9BRSbY=",
+      "hash": "sha256-UKuwmba1YLCuiZ9caVhpl5DrB72s7lo4ToCwp6Ra9eM=",
       "url": "_framework\/_bin\/Editorlol.dll"
     },
     {
@@ -285,7 +285,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-QB4zNwij2WN9XUBgcAw9GvL3PqSHQijuH7hr0rAZyvE=",
+      "hash": "sha256-xmm8ObPM4nd8bw4c\/ULiqzNsxLNTkwL9q0s3ear3uJE=",
       "url": "_framework\/_bin\/Editorlol.pdb"
     },
     {
@@ -305,7 +305,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-6diVSRMjFKAcy8rr3Jrmj2K1G9FaSST73bmT2KjfI+Q=",
+      "hash": "sha256-N\/02Cmv4goE5lstF2TIZYSC3Hxl9Ar9kqTAtWS37Lv0=",
       "url": "_framework\/blazor.boot.json"
     }
   ],

@@ -20,9 +20,9 @@ namespace Editorlol.Shared
 
         public SchoolCard(string className, string classroom, string teacher, string time)
         {
+            Classes.Add("LOOOOL");
             Background = new RectCard();
             Background.Classes.Add("school-orange");
-            Classes.Add("school-text");
             Background.SizeBehavior.Size = new Vector2f(200, 100);
             Background.PositionBehavior.Position = new Vector2f(0, 0);
             AddChild(Background);
@@ -30,27 +30,32 @@ namespace Editorlol.Shared
             ClassName = new TextCard();
             ClassName.PositionBehavior.Position = new Vector2f(150, 0);
             ClassName.TextBehavior.Value = className;
+            ClassName.Classes.Add(".school-text");
             AddChild(ClassName);
 
             Teacher = new TextCard();
             Teacher.TextBehavior.Value = teacher;
             Teacher.PositionBehavior.Position = new Vector2f(0, 60);
+            Teacher.Classes.Add(".school-text");
             AddChild(Teacher);
 
             Time = new TextCard();
             Time.TextBehavior.Value = time;
             Time.PositionBehavior.Position = new Vector2f(80, 30);
+            Time.Classes.Add(".school-text");
             AddChild(Time);
 
             Classroom = new TextCard();
             Classroom.TextBehavior.Value = classroom;
             Classroom.PositionBehavior.Position = new Vector2f(150, 60);
+            Classroom.Classes.Add(".school-text");
             AddChild(Classroom);
 
             Teacher.OnSelected += OnSelected;
             Time.OnSelected += OnSelected;
             Classroom.OnSelected += OnSelected;
             Background.OnSelected += OnSelected;
+            ClassName.OnSelected += OnSelected;
         }
 
         public override Vector2f GetSize() => Background.GetSize();

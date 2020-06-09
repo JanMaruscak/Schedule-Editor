@@ -22,15 +22,13 @@ g {
     height: 20px;
 }
 
-
-
-
 /* text SHIT */
 
 text {
     user-select: none;
     font-size: 20px;
-    fill: darkgray;
+    /*fill: darkgray;*/
+    fill: white;
     white-space: pre;
     background-color: red;
 }
@@ -38,7 +36,6 @@ text {
     text:focus {
         outline: none;
     }
-
 
 .card-highlighter {
     fill: transparent;
@@ -62,11 +59,6 @@ text {
     transition: opacity 0ms;
     opacity: 1.0 !important;
 }
-
-
-
-
-
 
 /* NEW BLAZE */
 .blaze-text:hover, .blaze-rect:hover {
@@ -117,9 +109,6 @@ text {
     .blaze-text-editing::selection {
         /*        background-color: #efb1ff;*/
     }
-
-
-
 
 /* HIDDEN WORKAROUND */
 .blaze-calculate-hidden {
