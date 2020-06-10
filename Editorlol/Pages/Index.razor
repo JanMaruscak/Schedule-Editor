@@ -3,24 +3,29 @@
 @using BlazeCardsCore.State
 @using BlazeCardsCore.Descriptors
 
-<button @onclick="GoLeft" style="outline:none; border: none; padding:5px">Go Left</button>
-<button @onclick="GoRight" style="outline:none; border: none; padding:5px">Go Right</button>
-<button @onclick="AddCard" style="outline:none; border: none; padding:5px">Add Card</button>
-<button @onclick="AddBreak" style="outline:none; border: none; padding:5px">Add Break</button>
-<button @onclick="DeleteCard" style="outline:none; border: none; padding:5px">Delete card</button>
-<button @onclick="UpdateTimes" style="outline:none; border: none; padding:5px">Update times</button>
-<select @onchange="SelectClass">
-    <option value="T2">T2</option>
-    <option value="T1">T1</option>
-</select>
-@(Week+1)/
-@(Weeks.Count)
+<div style="display:flex; width: 1000px">
+    <button @onclick="AddCard" style="outline: none; border: none; padding:5px;margin:5px">+ Add Card</button>
+    <button @onclick="AddBreak" style="outline:none; border: none; padding:5px;margin:5px">+ Add Break</button>
+    <button @onclick="DeleteCard" style="outline:none; border: none; padding:5px;margin:5px">- Delete card</button>
+    <button @onclick="UpdateTimes" style="outline:none; border: none; padding:5px;margin:5px">Update times</button>
+    <select @onchange="SelectClass" style="padding: 5px;margin:5px">
+        <option value="T2">T2</option>
+        <option value="T1">T1</option>
+    </select>
+</div>
 
-<div style="display: flex;">
+<div style="display:flex; justify-content: center; align-items:center; width: 1000px">
+    <img @onclick="GoLeft" src="/images/chevron-left.svg" alt="Alternate Text" width="40px" style="cursor:pointer; margin-top: 10px" />
+    <img @onclick="GoRight" src="/images/chevron-left.svg" alt="Alternate Text" width="40px" style="transform: rotate(180deg); cursor:pointer;margin-top: 10px" />
+</div>
+@*@(Week+1)/
+    @(Weeks.Count)*@
+
+<div style="display: flex; margin-top: 25px">
     @foreach (var item in Days)
     {
         <div style="display: flex; flex-direction: column">
-            <p style="width: 200px; text-align:center; color: black">@item.DayOfWeek</p>
+            <p style="width: 200px; text-align: center; color: black">@item.DayOfWeek</p>
             <p style="width: 200px; text-align:center; color: black">@item.Day.ToString(). @item.Month.ToString().</p>
         </div>
     }

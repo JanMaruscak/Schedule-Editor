@@ -65,6 +65,10 @@
       "url": "icon-512.png"
     },
     {
+      "hash": "sha256-xLzE84yJ\/1OXKYxWdPyynSsL1idbJ9tSshCbaJwNtT8=",
+      "url": "images\/chevron-left.svg"
+    },
+    {
       "hash": "sha256-7GBCIWqHMKcflkc+A3INq2zXDy+7K5T14xTAZFQznyM=",
       "url": "index.html"
     },
@@ -73,7 +77,11 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-p+iRYyavlUhDH8uox9foN4j9hAA\/EjLKg22RHZBqkXc=",
+      "hash": "sha256-vQB2bW7b6HQvwVRjQ3Sdua34mORHsKEJNQGC5BucRTQ=",
+      "url": "_redirects"
+    },
+    {
+      "hash": "sha256-ekHoU10eWMFsPh\/vl+oHXyJMBg5F9IOFuTJ6LtJ\/gjA=",
       "url": "_framework\/_bin\/Editorlol.dll"
     },
     {
@@ -285,7 +293,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-\/DNmwLbpkLlSECW\/0Qh+0Zz6T2J9zGbYZtUb6qHyAns=",
+      "hash": "sha256-CdPLJcEENkaKUSTvcCrxiDKSsNnp8bKw7F+Xq20yx2U=",
       "url": "_framework\/_bin\/Editorlol.pdb"
     },
     {
@@ -305,7 +313,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-nRxv5PkZxys71Hfj4Pj0UM5sGjdBUI2jX8LExbZiT+A=",
+      "hash": "sha256-JIghqgMTfqnbTsCFW4D\/zBGwGbGed24WRDxtsk0fH5o=",
       "url": "_framework\/blazor.boot.json"
     }
   ],

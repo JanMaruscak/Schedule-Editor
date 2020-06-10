@@ -363,7 +363,8 @@ C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\compres
 C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\compressed\_framework\_bin\Mono.WebAssembly.Interop.dll.br
 C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\Hk-4dWOYcqXse0u8VKa6thzBPRTSU5Mi5RXLXsYqCz8=.hash
 C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\2DvKhZyJfm1nhmP9YCW_nz6gXv6Tlfhx4v_ohv9-r1M=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\p_iRYyavlUhDH8uox9foN4j9hAA-EjLKg22RHZBqkXc=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\-DNmwLbpkLlSECW-0Qh_0Zz6T2J9zGbYZtUb6qHyAns=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\nRxv5PkZxys71Hfj4Pj0UM5sGjdBUI2jX8LExbZiT_A=.hash
-C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\bwrbh342X-jQXJcrpWla4Dyftxh6eWEP-DTuT4h6WW0=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\wxKcpYN25ZktO3SHhqCxb3SRn1JWL53ecfCTBeKEkTk=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\ekHoU10eWMFsPh-vl_oHXyJMBg5F9IOFuTJ6LtJ-gjA=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\CdPLJcEENkaKUSTvcCrxiDKSsNnp8bKw7F_Xq20yx2U=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\JIghqgMTfqnbTsCFW4D-zBGwGbGed24WRDxtsk0fH5o=.hash
+C:\Users\janma\source\repos\Editorlol\Editorlol\obj\Debug\netstandard2.1\integrity\QXTwIA2Nv3rrYUz5imD7Qc7RBKl9fCfbJhXOygm49bs=.hash
